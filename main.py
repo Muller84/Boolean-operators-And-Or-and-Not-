@@ -13,7 +13,7 @@ def colored(r, g, b, text, bold=False, underline=False, blink=False, bg=None):
     bg_code = f"\033[48;2;{bg[0]};{bg[1]};{bg[2]}m" if bg else ""
     return f"{bold_code}{bg_code}{color_code}{text}\033[0m"
 
-print(colored(255, 0, 255, "Let's see if you're trip-worthy!\n", bold=True ))
+print(colored(255, 0, 255, "Let's see if you're trip-worthy!\n" ))
  
 age = int(input("Enter your age (must be 15 or older): "))
  
